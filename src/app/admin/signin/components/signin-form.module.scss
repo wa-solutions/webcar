@@ -1,0 +1,21 @@
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0;
+  gap: 8px;
+}
+
+.formLabel {}
+
+.formInput {
+  height: 38px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  padding: 8px;
+  color: #333;
+}

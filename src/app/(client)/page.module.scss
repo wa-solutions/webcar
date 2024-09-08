@@ -1,0 +1,196 @@
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.cover {
+  // padding: 60px 0 60px 10vw;
+  // display: grid;
+  // height: 520px;
+  // grid-template-columns: 1fr 1fr;
+  // background-color: #fffafb;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 2fr 1fr;
+    padding: 30px 0 30px 4vw;
+  }
+}
+
+.coverImage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  img {
+    width: 100%;
+    // height: auto;
+    // width: 50%;
+    height: auto;
+    overflow: hidden;
+    object-position: 10vw 0;
+    object-fit: cover;
+  }
+}
+
+.searchOptions {
+  display: flex;
+  gap: 10px;
+}
+
+.sectionSearch {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 0;
+
+
+}
+
+.searchContainer {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  background-color: #fffafb;
+  border-radius: 12px;
+  padding: 20px;
+  gap: 20px;
+
+  @media (max-width: 960px) {
+    width: 100%;
+    padding: 0 4vw;
+  }
+}
+
+.formSearch {
+  display: flex;
+  input {
+    height: 38px;
+    width: calc(100% - 200px);
+    border-radius: 8px 0 0 8px;
+    border: 1px solid #ececec;
+    padding: 0 16px;
+    color: var(--text-primary);
+    &::placeholder {
+      color: var(--text-disabled);
+    }
+  }
+
+  button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 38px;
+    width: 200px;
+    border: none;
+    border-radius: 0 8px 8px 0;
+    background-color: #E63946;
+    color: var(--text-inverse);
+  }
+  @media (max-width: 960px) {
+    input {
+      width: calc(100% - 100px);
+    }
+    button {
+      width: 100px;
+    }
+  }
+}
+
+.sectionBrand {
+  padding: 30px 10vw;
+}
+
+.brandListContainer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  column-gap: 20px;
+  row-gap: 20px;
+}
+
+
+.brandContainer {
+  display: flex;
+  flex-direction: column;
+  width: 120px;
+  height: 100px;
+
+  border: 1px solid #ececec;
+  border-radius: 12px;
+  cursor: pointer;
+
+  .brandImage {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+  }
+
+  .brandName {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+.sectionCarList {
+  padding: 0 10vw;
+}
+
+.carListContainer {
+  display: flex;
+  gap: 10px;
+}
+
+.carListFooter {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.carListButton {
+  cursor: pointer;
+  display: flex;
+  border-radius: 8px;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 38px;
+  background-color: #E63946;
+  color: var(--text-inverse);
+
+  -webkit-transition: opacity 500ms ease-in-out;
+  -moz-transition: opacity 500ms ease-in-out;
+  -ms-transition: opacity 500ms ease-in-out;
+  -o-transition: opacity 500ms ease-in-out;
+  transition: opacity 500ms ease-in-out;
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.sectionBuyCar {
+  padding: 0 0 0 10vw;
+  background-color: #192459;
+  color: var(--text-inverse);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.buyButton {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.imageBuyCarContainer {
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.sectionBrandList {
+  padding: 30px 10vw;
+}

@@ -1,0 +1,58 @@
+.container {
+  border: 1px solid #ececec;
+  width: 280px;
+  border-radius: 12px;
+}
+
+.imageContainer {
+  img {
+    border-radius: 12px 12px 0 0;
+    width: 100%;
+    height: auto;
+  }
+}
+
+.carDetails {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px;
+  gap: 10px;
+}
+
+.carName {
+  display: flex;
+  align-items: center;
+
+  gap: 8px;
+}
+
+.carInfoContainer {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #ececec;
+  padding: 10px 0 0 0;
+}
+
+.carInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+
+  span {
+    color: var(--text-disabled);
+  }
+}
+
+.carPrice {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  border-top: 1px solid #ececec;
+  padding: 10px 0 0 0;
+  color: var(--text-primary);
+  a {
+    text-decoration: underline;
+    color: var(--text-secondary);
+  }
+}

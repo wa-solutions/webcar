@@ -1,0 +1,36 @@
+.main {
+  display: flex;
+  height: 60px;
+  background-color: aquamarine;
+  justify-content: space-between;
+  padding: 0 80px 0 20px;
+}
+
+.control__container {
+  display: flex;
+  align-items: center;
+}
+
+.control__circle {
+  display: flex;
+  background-color: blanchedalmond;
+  width: 32px;
+  height: 32px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+
+  svg {
+    color: var(--text-primary);
+    font-size: 16px;
+  }
+}
+
+.profile__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  position: relative;
+}

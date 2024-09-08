@@ -1,0 +1,22 @@
+.main {
+
+}
+
+.sectionPresentation {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 10vw;
+
+  gap: 30px;
+  color: var(--text-primary);
+
+  h1 {
+    text-align: center;
+  }
+
+  p {
+    padding: 0 200px;
+  }
+}
+
+.sectionMission {}
